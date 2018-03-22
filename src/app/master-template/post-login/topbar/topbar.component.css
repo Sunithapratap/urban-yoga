@@ -1,0 +1,94 @@
+.demo-tab-group {
+    border: 1px solid #e8e8e8;
+}
+
+.demo-tab-content {
+    padding: 16px;
+}
+
+ul.mat-tab-nav-bar {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right:0
+}
+
+
+ul.mat-tab-nav-bar li.mat-tab-link {
+    list-style-type: none;
+    height: 48px;
+    padding: 0 ;
+    cursor: pointer;
+    box-sizing: border-box;
+    opacity: 1;
+    min-width: auto;
+    text-align: center;
+    display: inline-flex;
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-top: 1px solid #b2b2b2;
+    justify-content: center;
+    color: #b2b2b2;
+    align-items: center;
+    white-space: nowrap;
+    vertical-align: top;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    top: 20px
+}
+
+ul.mat-tab-nav-bar li.mat-tab-link.active {
+    background: #fff;
+    border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-left: 1px solid #b2b2b2;
+    border-right: 1px solid #b2b2b2;
+    padding: 2px 25px;
+}
+
+ul.mat-tab-nav-bar li.mat-tab-link a{
+    border-right: 1px solid #b2b2b2;
+    color: #809488;
+    padding: 0 30px;
+}
+
+ul.mat-tab-sub-nav-bar li.mat-tab-sub-link a {
+    color: #666666;
+}
+
+  ul.mat-tab-nav-bar li:first-child.mat-tab-link a, ul.mat-tab-nav-bar li:last-child.mat-tab-link a {
+    border-right: 0;
+}
+
+ul.mat-tab-sub-nav-bar {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left:0;
+    background: #ffffff;
+    width:100%
+}
+
+ul.mat-tab-sub-nav-bar li.mat-tab-sub-link{
+    list-style-type: none;
+    height: 45px;
+    padding: 13px 25px;
+    cursor: pointer;
+    box-sizing: border-box;
+    opacity: 1;
+    min-width: auto;
+    text-align: center;
+    display: inline-flex;
+}
+
+ul.mat-tab-sub-nav-bar li.mat-tab-sub-link.active a{
+    font-weight: bold;
+}
+
+ul.mat-tab-nav-bar li.mat-tab-link.active a{
+    font-weight: bold;
+}

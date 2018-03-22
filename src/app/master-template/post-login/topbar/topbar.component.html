@@ -1,0 +1,20 @@
+<mat-toolbar class="top-bar p-0">
+    <div fxFlex class="logo-bg">
+        <img src="assets/images/logo.png" class="f-left"/>
+        <ul class="f-right mat-tab-nav-bar">
+            <li *ngFor="let link of navLinks" class="mat-tab-link" [ngClass]="link.isActive ? 'active': ''">
+                <a>
+                    {{link.label}}
+                </a>
+            </li>
+        </ul>
+        <ul class="f-right mat-tab-sub-nav-bar" *ngIf="showDashboardsLinks">
+            <li *ngFor="let subLink of subLinks" class="mat-tab-sub-link"
+                [ngClass]="subLink.isActive ? 'active': ''">
+                <a>
+                    {{subLink.label}}
+                </a>
+            </li>
+        </ul>
+    </div>
+</mat-toolbar>

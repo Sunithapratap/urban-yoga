@@ -1,0 +1,46 @@
+<div fxLayout="row" fxLayoutWrap="wrap" fxLayoutGap="10px" class="m-t-l-r-20">
+    <div *ngFor="let detail of programDetails;let i=index" fxFlex="20%">
+        <div fxFlex="1 2 calc(10em + 20px)" class="text-center">
+            <mat-card class="p-0 set-max-height card-style">
+                <mat-card-title class="mat-bg-primary">
+                    <h3>{{detail.program.name}}</h3>
+                </mat-card-title>
+                <mat-card-content class="text-center">
+                    <div class="chart">
+                        <h4>Sales by month</h4>
+                        <div *ngIf="detail.program.chart">
+                            <canvas id="canvas">{{ detail.program.chart}}</canvas>
+                        </div>
+                    </div>
+                    <div class="consolidated-report">
+                        <h4>Total Monthly Sales</h4>
+                        <table>
+                            <tr>
+                                <th><b>Current</b></th>
+                                <th><b>1 - year</b></th>
+                            </tr>
+                            <tr>
+                                <td align="left" class="fifty-percent"> {{detail.program.totalMonthlySales | currency}}
+                                </td>
+                                <td class="fifty-percent"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                    <div *ngIf="detail.program.showOptionsBool" class="show-options" (click)="showOptions(detail.program)">Less</div>
+                    <div *ngIf="!detail.program.showOptionsBool" class="show-options" (click)="showOptions(detail.program)">More</div>
+                    <table class="price-options" *ngIf="detail.program.showOptionsBool">
+                        <tr>
+                            <th><b>Price Name </b></th>
+                            <th><b>Current</b></th>
+                        </tr>
+                        <tr *ngFor="let options of detail.program.pricingOptions;let i=index">
+                            <td align="left"> {{options.Name}}</td>
+                            <td> {{options.Sales | currency}}</td>
+                        </tr>
+                    </table>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>

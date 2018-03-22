@@ -1,1 +1,181 @@
-/* You can add global styles to this file, and also import other style files */
+/*---- Globals -----*/
+html {
+    font-size: 16px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    min-height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: .875rem;
+    color: rgba(0, 0, 0, .87);
+    line-height: 1.5;
+    font-family: "Roboto", Helvetica Neue, sans-serif;
+    background: #E4E3DA;
+}
+
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.mat-card {
+    font-size: .875rem;
+    background: #ffffff;
+}
+
+
+a, a:focus, a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+}
+
+p {
+    margin: 0 0 16px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: .5rem;
+    font-weight: 400;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.top-bar {
+    background: #EDF7F3 !important;
+    color: #ffffff;
+    min-height: 50px;
+    height: auto !important;
+    overflow: hidden;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.f-left {
+    float: left
+}
+
+.f-right {
+    float: right
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.mat-bg-primary.mat-card-title {
+    height: 38px !important;
+    padding: 5px 0;
+}
+
+.mat-bg-primary.mat-card-title h3{ font-weight: bold }
+
+.text-center {
+    text-align: center;
+}
+
+.m-t-l-r-20 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px
+}
+
+.card-style {
+    min-height: 50px;
+    height: auto !important;
+    overflow: hidden;
+    height: 100%;
+    padding: 10px 10px;
+}
+
+.consolidated-report {
+    background: #FBFBF6;
+    padding: 10px;
+}
+.consolidated-report table {
+    padding: 0;
+    margin: 0;
+    width: 100%
+}
+
+.consolidated-report table th {
+   background: #f2f2f2;
+    padding: 0;
+    margin: 0;
+}
+.chart {
+    text-align: left;
+    padding: 0 10px;
+    color: #b7b7b7
+}
+
+.fifty-percent {
+    width: 50%
+}
+
+table.price-options {
+    padding: 10px;
+    font-size: 0.85em;
+    padding: 0;
+    margin: 0;
+    width: 100%
+}
+table.price-options th {
+    text-align: left;
+    font-size: 1em;
+    padding: 0 10px;
+}
+
+table.price-options td{
+    padding: 5px 10px;
+}
+
+.show-options {
+    font-size: 0.85em;
+    text-align: left;
+    color: #b2b2b2;
+    padding: 0 10px;
+}
+
+.chart {
+    display: block;
+}
